@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vote Center - Danh sách bình chọn</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0; font-family: Arial, sans-serif;
+    background: #f4f5fb; color: #252542;
+}
+header {
+    background: #6254d9; color: white;
+    padding: 25px 16px; text-align: center;
+}
+header h2 { margin: 0 0 8px; }
+header p { margin: 0; }
+.container { max-width: 850px; margin: 35px auto; padding: 0 20px; }
+h1 { text-align: center; margin-bottom: 8px; }
+.description { text-align: center; color: #777; margin-bottom: 30px; }
+.vote-list { display: grid; gap: 15px; }
+.vote-item {
+    background: white; padding: 20px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 15px; box-shadow: 0 3px 12px #0000000d;
+}
+.vote-item h3 { margin: 0 0 8px; }
+.vote-item p { color: #888; font-size: 13px; overflow-wrap: anywhere; margin: 0; }
+.vote-button {
+    display: inline-block; background: #6254d9; color: white;
+    text-decoration: none; padding: 12px 22px; border-radius: 8px;
+    white-space: nowrap; font-weight: bold;
+}
+.vote-button:hover { background: #4839bd; }
+@media (max-width: 550px) {
+    .vote-item { flex-direction: column; align-items: stretch; }
+    .vote-button { text-align: center; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h2>🗳️ VOTE CENTER</h2>
+    <p>Tổng hợp tất cả đường link bình chọn</p>
+</header>
+
+<main class="container">
+    <h1>Danh sách bình chọn</h1>
+    <p class="description">Chọn cuộc bình chọn và nhấn VOTE để mở trang bình chọn gốc.</p>
+
+    <div class="vote-list">
+        <!-- Thay tên và URL bên dưới bằng các đường link vote có sẵn của bạn. -->
+        <div class="vote-item">
+            <div>
+                <h3>🏆 Bình chọn số 1</h3>
+                <p>https://www.youtube.com/watch?v=UjvwLlO4Gv0</p>
+            </div>
+            <a class="vote-button" href="https://www.youtube.com/watch?v=UjvwLlO4Gv0"
+               target="_blank" rel="noopener noreferrer">VOTE NGAY ↗</a>
+        </div>
+
+        <div class="vote-item">
+            <div>
+                <h3>🏆 Bình chọn số 2</h3>
+                <p>https://example.com/vote2</p>
+            </div>
+            <a class="vote-button" href="https://example.com/vote2"
+               target="_blank" rel="noopener noreferrer">VOTE NGAY ↗</a>
+        </div>
+
+        <div class="vote-item">
+            <div>
+                <h3>🏆 Bình chọn số 3</h3>
+                <p>https://example.com/vote3</p>
+            </div>
+            <a class="vote-button" href="https://example.com/vote3"
+               target="_blank" rel="noopener noreferrer">VOTE NGAY ↗</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
